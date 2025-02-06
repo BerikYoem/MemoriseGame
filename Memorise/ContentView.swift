@@ -64,6 +64,7 @@ struct ContentView: View {
 
 struct CardView: View {
     @State var isFaceUp: Bool = false
+    //@State creates a pointer
     
     var body: some View {
         ZStack {
@@ -77,7 +78,7 @@ struct CardView: View {
             }
             }
         .onTapGesture {
-            isFaceUp.toggle()       //  same as the code below.
+            isFaceUp.toggle()       // same as the code below.
 //            isFaceUp = !isFaceUp
         }
     }
